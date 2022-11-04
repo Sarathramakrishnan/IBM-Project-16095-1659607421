@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="./img/pexels-photo.png" class="./img/pexels">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+        </nav>
+
+        <div class="content">
+            <span class="title">Freelance Web Developer</span>
+            <h1>Hello, I’m <span>swetha</span></h1>
+            <p>I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional React Template Imroz.</p>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "73d4153d-8fb1-49f0-8bf2-dc4b72a10368", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "1e43a724-f4f1-47cb-b232-35bfc5ed7def", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
